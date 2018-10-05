@@ -30,5 +30,18 @@ Learn Git Part 1:
 8)git  pull orign master 
 
 
+learn Git Hub Part 2:
+*********************
+
+Creation of branches 
+
+1)git branch:--To check where are you currently 
+
+2)git branch Branch Name--Create a branch 
+  ex: git branch Projectdemo1
+
+3)git branch checkout  branchname 
+
+
 
 

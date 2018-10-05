@@ -39,9 +39,11 @@ Creation of branches
 
 2)git branch Branch Name--Create a branch 
   ex: git branch Projectdemo1
+  
+3)all the change are made on Projectdemo1 branch with out effecting master 
 
-3)git branch checkout  branchname 
+3)git branch checkout  master (to switch to master branch )---after successful testing the code in Projectdemo1 go to master 
 
-
+4)git merge master branch name ----merge the updated code to master inoredr to reflecting the changes in master.
 
 

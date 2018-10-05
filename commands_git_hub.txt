@@ -1,0 +1,34 @@
+GitHub:--->
+
+
+commands:
+
+basic commands :
+
+git config --global user.email " aurobindr.nayak3@gmail.com"
+
+git config --global user.name"Aurobinda"
+
+
+Learn Git Part 1:
+******************
+
+1)git init
+
+2)git add [File Name] || - A
+
+3)git status
+
+4)git commit -m "message "
+
+5)git remote add orign repoName
+
+6)git push orign master 
+
+7)git clone repoName
+
+8)git  pull orign master 
+
+
+
+

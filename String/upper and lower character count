@@ -1,0 +1,20 @@
+#program to count total upper and lower case character 
+
+Input = "Introduction to Python"
+#Output : Lower Case characters : 18 Upper case characters : 2
+
+Input1 =  "Welcome to GeeksforGeeks"
+#Output : Lower Case characters : 19  Upper case characters: 3
+Upper_Case_Character=0
+Lower_Case_Character=0
+
+for character in Input1 :
+    if ord(character)>=97 and ord(character)<=122:
+        Lower_Case_Character+=1
+    elif ord(character)>=65 and ord(character)<=90:
+        Upper_Case_Character+=1
+print "Number of upper case character:{}".format(Upper_Case_Character)
+print "Number of lower case character:{}".format(Lower_Case_Character)
+        
+    
+

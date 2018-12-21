@@ -1,8 +1,5 @@
 #! /usr/bin/python
 
-__author__="ofer.helman"
-__date__ ="$Nov 9, 2011 9:30:26 PM$"
-
 import os
 import wmi
 import shutil

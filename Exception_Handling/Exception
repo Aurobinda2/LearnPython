@@ -1,0 +1,48 @@
+try:
+    print "Statement-1"
+    print "Statement 2"
+    print "Statement-3"
+    try:
+        print "Statement-4"
+        print "Statement-5"
+        print "Statement-6"
+    except NameError:
+        print "Statement-7"
+    finally :
+        print "Statement-8"
+        
+    print "Statement-9"
+except:
+     print "Statement-10"
+finally :
+    print "Statement-11"
+print  "Statement-12"
+
+
+Possibilites:
+
+  If there is no exception #1,2,3,4,5,6,8,9,11,12..Normal Termination
+
+  If an exception raised at stmt-2 and the corresponding except block matched #1,10,11,12 ----NT
+
+  If an exceptiion raised at stmt-2 and the corresponding except block not matched # 1,11---ABNT 
+
+  If an exception raised at stmt-5 and inner except block matched #1,2,3,4,7,8,9,11,12 --NT
+
+  If an exception raised at stmt-5 and inner except block not matched but outer except block  matched #  1,2,3,4,8,10,11,12--NT
+
+  If an exception raised at stmt-5 and both inner and outer except blocks are not matched # 1,2,3,4,8,11 --ABNT
+ 
+  If an exception raised at stmt-7 and corresponding except block matched # 1,2,3,4,5,6,8,9,11,12--NT..There is no exception in try so except block not executed 
+
+  If an exception raised at stmt-7 and corresponding except block not matched # 1,2,3,4,5,6,8,9,11,12--NT..There is no exception in try so except block not executed 
+
+  If an exception raised at stmt-8 and corresponding except block matched # 1,2,3,4,5,6,10,11,12--NT
+
+  If an exception raised at stmt-9 and corresponding except block matched #1,2,3,4,5,6,8,10,11,12--NT
+
+  If an exception raised at stmt-9 and corresponding except block not matched #1,2,3,4,5,6,8,11--ABNT
+
+  If an exception raised at stmt-10 # 1,2,3,4,5,6,8,9,11,12
+
+  If an exception raised at stmt-11 or stmt-12 then it is always abnormal #1,2,3,4,5,6,,8,9--ABNT(raise on st-11)... 1,2,3,4,5,6,,8,9,11--ABNT(raise on st-12)

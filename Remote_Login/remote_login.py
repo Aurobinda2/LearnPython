@@ -173,3 +173,61 @@ class WindowsMachine:
 
 if __name__ == "__main__":
     main()
+    
+https://www.accadius.com/using-python-read-windows-event-logs-multiple-servers/
+    ActiveState PyWin32: http://docs.activestate.com/activepython/3.3/pywin32/Windows_NT_Eventlog.html
+The attributes in the Event object: http://docs.activestate.com/activepython/3.3/pywin32/PyEventLogRecord.html
+
+        
+        server = 'localhost' # name of the target computer to get event logs
+logtype = 'System'
+hand = win32evtlog.OpenEventLog(server,logtype)
+flags = win32evtlog.EVENTLOG_BACKWARDS_READ|win32evtlog.EVENTLOG_SEQUENTIAL_READ
+total = win32evtlog.GetNumberOfEventLogRecords(hand)
+
+while True:
+    events = win32evtlog.ReadEventLog(hand, flags,0)
+    if events:
+        for event in events:
+            if event.EventID == "27035":
+                print 'Event Category:', event.EventCategory
+                print 'Time Generated:', event.TimeGenerated
+                print 'Source Name:', event.SourceName
+                print 'Event ID:', event.EventID
+                print 'Event Type:', event.EventType
+                data = event.StringInserts
+                if data:
+                    print 'Event Data:'
+                    for msg in data:
+                        print msg
+                break
+    
+    
+    GetNumberOfEventLogRecords  Retrieves the number of records in the specified event log.
+GetOldestEventLogRecord     Retrieves the absolute record number of the oldest record 
+                            in the specified event log.
+NotifyChangeEventLog        Enables an application to receive notification when an event
+                            is written to the specified event log.
+
+ReadEventLog                Reads a whole number of entries from the specified event log.
+RegisterEventSource         Retrieves a registered handle to the specified event log.
+Only other method of interest is reading the oldest event.
+
+You will have to iterate through the results any way and your approach is correct :)
+
+You can only change the form of your approach like below but this is unnecessary.
+
+events = win32evtlog.ReadEventLog(hand, flags,0)
+events_list = [event for event in events if event.EventID == "27035"]
+if event_list:
+    print 'Event Category:', events_list[0].EventCategory
+    
+    
+    
+    
+    
+    There is a python library now (python 3 and up) that will do what you're asking called winevt. What you're looking for could be done via the following:
+
+from winevt import EventLog
+query = EventLog.Query("System","Event/System[EventID=27035]")
+event = next(query)

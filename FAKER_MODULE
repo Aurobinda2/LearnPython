@@ -1,0 +1,18 @@
+from faker import Faker
+fake=Faker('IN')
+Employee={"details":[]}
+def data(number):
+  for i in range(number):
+    Employee['details'].append({})
+    Employee['details'][i]['name']=fake.name()
+    Employee['details'][i]['address']=fake.address()
+    Employee['details'][i]['email']=fake.email()
+    
+  return Employee
+details=data(10)
+for detail in Employee['details']:
+  print (detail['name'])
+  print(detail['address'])
+  print(detail['email'])
+  print()
+  print()

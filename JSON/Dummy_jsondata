@@ -1,0 +1,22 @@
+{
+  "people": [
+    {
+      "emails": [
+        "aurobinda.nayak783@gmail.com",
+        "aurobindr.nayak3@gmail.com"
+      ],
+      "has_license": false,
+      "name": "Aurobinda",
+      "phone": "09673894649"
+    },
+    {
+      "emails": [
+        "Rajesh.nayak783@gmail.com",
+        "Raju123.nayak3@gmail.com"
+      ],
+      "has_license": true,
+      "name": "Rajesh",
+      "phone": "09673894649"
+    }
+  ]
+}

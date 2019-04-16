@@ -1,0 +1,254 @@
+{
+  "states": [
+    {
+      "Serial": 1,
+      "abbreviation": "AL",
+      "name": "Alabama"
+    },
+    {
+      "Serial": 2,
+      "abbreviation": "AK",
+      "name": "Alaska"
+    },
+    {
+      "Serial": 3,
+      "abbreviation": "AZ",
+      "name": "Arizona"
+    },
+    {
+      "Serial": 4,
+      "abbreviation": "AR",
+      "name": "Arkansas"
+    },
+    {
+      "Serial": 5,
+      "abbreviation": "CA",
+      "name": "California"
+    },
+    {
+      "Serial": 6,
+      "abbreviation": "CO",
+      "name": "Colorado"
+    },
+    {
+      "Serial": 7,
+      "abbreviation": "CT",
+      "name": "Connecticut"
+    },
+    {
+      "Serial": 8,
+      "abbreviation": "DE",
+      "name": "Delaware"
+    },
+    {
+      "Serial": 9,
+      "abbreviation": "FL",
+      "name": "Florida"
+    },
+    {
+      "Serial": 10,
+      "abbreviation": "GA",
+      "name": "Georgia"
+    },
+    {
+      "Serial": 11,
+      "abbreviation": "HI",
+      "name": "Hawaii"
+    },
+    {
+      "Serial": 12,
+      "abbreviation": "ID",
+      "name": "Idaho"
+    },
+    {
+      "Serial": 13,
+      "abbreviation": "IL",
+      "name": "Illinois"
+    },
+    {
+      "Serial": 14,
+      "abbreviation": "IN",
+      "name": "Indiana"
+    },
+    {
+      "Serial": 15,
+      "abbreviation": "IA",
+      "name": "Iowa"
+    },
+    {
+      "Serial": 16,
+      "abbreviation": "KS",
+      "name": "Kansas"
+    },
+    {
+      "Serial": 17,
+      "abbreviation": "KY",
+      "name": "Kentucky"
+    },
+    {
+      "Serial": 18,
+      "abbreviation": "LA",
+      "name": "Louisiana"
+    },
+    {
+      "Serial": 19,
+      "abbreviation": "ME",
+      "name": "Maine"
+    },
+    {
+      "Serial": 20,
+      "abbreviation": "MD",
+      "name": "Maryland"
+    },
+    {
+      "Serial": 21,
+      "abbreviation": "MA",
+      "name": "Massachusetts"
+    },
+    {
+      "Serial": 22,
+      "abbreviation": "MI",
+      "name": "Michigan"
+    },
+    {
+      "Serial": 23,
+      "abbreviation": "MN",
+      "name": "Minnesota"
+    },
+    {
+      "Serial": 24,
+      "abbreviation": "MS",
+      "name": "Mississippi"
+    },
+    {
+      "Serial": 25,
+      "abbreviation": "MO",
+      "name": "Missouri"
+    },
+    {
+      "Serial": 26,
+      "abbreviation": "MT",
+      "name": "Montana"
+    },
+    {
+      "Serial": 27,
+      "abbreviation": "NE",
+      "name": "Nebraska"
+    },
+    {
+      "Serial": 28,
+      "abbreviation": "NV",
+      "name": "Nevada"
+    },
+    {
+      "Serial": 29,
+      "abbreviation": "NH",
+      "name": "New Hampshire"
+    },
+    {
+      "Serial": 30,
+      "abbreviation": "NJ",
+      "name": "New Jersey"
+    },
+    {
+      "Serial": 31,
+      "abbreviation": "NM",
+      "name": "New Mexico"
+    },
+    {
+      "Serial": 32,
+      "abbreviation": "NY",
+      "name": "New York"
+    },
+    {
+      "Serial": 33,
+      "abbreviation": "NC",
+      "name": "North Carolina"
+    },
+    {
+      "Serial": 34,
+      "abbreviation": "ND",
+      "name": "North Dakota"
+    },
+    {
+      "Serial": 35,
+      "abbreviation": "OH",
+      "name": "Ohio"
+    },
+    {
+      "Serial": 36,
+      "abbreviation": "OK",
+      "name": "Oklahoma"
+    },
+    {
+      "Serial": 37,
+      "abbreviation": "OR",
+      "name": "Oregon"
+    },
+    {
+      "Serial": 38,
+      "abbreviation": "PA",
+      "name": "Pennsylvania"
+    },
+    {
+      "Serial": 39,
+      "abbreviation": "RI",
+      "name": "Rhode Island"
+    },
+    {
+      "Serial": 40,
+      "abbreviation": "SC",
+      "name": "South Carolina"
+    },
+    {
+      "Serial": 41,
+      "abbreviation": "SD",
+      "name": "South Dakota"
+    },
+    {
+      "Serial": 42,
+      "abbreviation": "TN",
+      "name": "Tennessee"
+    },
+    {
+      "Serial": 43,
+      "abbreviation": "TX",
+      "name": "Texas"
+    },
+    {
+      "Serial": 44,
+      "abbreviation": "UT",
+      "name": "Utah"
+    },
+    {
+      "Serial": 45,
+      "abbreviation": "VT",
+      "name": "Vermont"
+    },
+    {
+      "Serial": 46,
+      "abbreviation": "VA",
+      "name": "Virginia"
+    },
+    {
+      "Serial": 47,
+      "abbreviation": "WA",
+      "name": "Washington"
+    },
+    {
+      "Serial": 48,
+      "abbreviation": "WV",
+      "name": "West Virginia"
+    },
+    {
+      "Serial": 49,
+      "abbreviation": "WI",
+      "name": "Wisconsin"
+    },
+    {
+      "Serial": 50,
+      "abbreviation": "WY",
+      "name": "Wyoming"
+    }
+  ]
+}

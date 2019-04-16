@@ -1,0 +1,45 @@
+Code #3 : Extract number of columns
+# Program to extract number of 
+# columns in Python 
+import xlrd 
+loc = ("path of file") 
+wb = xlrd.open_workbook(loc) 
+sheet = wb.sheet_by_index(0) 
+# For row 0 and column 0 
+sheet.cell_value(0, 0) 
+# Extracting number of columns 
+print(sheet.ncols) 
+
+*************************
+Code #4 : Extracting all columns name
+# Program extracting all columns 
+# name in Python 
+import xlrd 
+loc = ("path of file") 
+wb = xlrd.open_workbook(loc) 
+sheet = wb.sheet_by_index(0) 
+# For row 0 and column 0 
+sheet.cell_value(0, 0) 
+for i in range(sheet.ncols): 
+    print(sheet.cell_value(0, i))
+
+**************************
+Code #5 : Extract first column
+# Program extracting first column 
+import xlrd 
+loc = ("path of file") 
+wb = xlrd.open_workbook(loc) 
+sheet = wb.sheet_by_index(0) 
+sheet.cell_value(0, 0) 
+for i in range(sheet.nrows): 
+    print(sheet.cell_value(i, 0)) 
+
+************************************
+Code #6 : Extract a particular row value
+# Program to extract a particular row value 
+import xlrd 
+loc = ("path of file") 
+wb = xlrd.open_workbook(loc) 
+sheet = wb.sheet_by_index(0) 
+sheet.cell_value(0, 0) 
+print(sheet.row_values(1)) 

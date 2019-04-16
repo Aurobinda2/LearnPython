@@ -1,0 +1,21 @@
+#This module is basically used to write data to excel file 
+#frequently used methods:
+#step 1)Import module import xlwt
+#2, Create a Workbook (actually excel, then save it on the line)
+#workbook = xlwt.Workbook()
+#3, Create table
+　#　worksheet = workbook.add_sheet('My Worksheet')
+#4, To write the content within a cell
+　　#worksheet.write(0, 0, label = 'Row 0, Column 0 Value')
+#5, Preservation
+　#　workbook.save('Excel_Workbook.xls') 
+ 
+ 
+import xlwt
+data=[['Aurobinda',35,'Cuttack'],['Rajesh',27,'Dhenkanal'],['Prakash',45,'K.Nagar'],['Bikash',22,'Puri']]
+wb=xlwt.Workbook()
+sheet=wb.add_sheet('Sheet1')
+for r in range(4):
+    for c in range(3):
+        sheet.write(r,c,data[r][c])
+wb.save('test.xls')

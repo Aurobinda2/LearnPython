@@ -1,0 +1,44 @@
+d1={}
+print d1
+print type(d1)
+print ""
+d2={1:"Aurobinda",2:"Rajesh"}
+print d2
+print type(d2)
+print ""
+d3={"Name":"Priyambada Dash" , 2:28 }
+print d3
+print type(d3)
+print ""
+d4={"Name":"Braja" ,"Subject":["Physics","Computer","Bio"] }
+print d4
+print type(d4)
+print ""
+d5={"Name":{"first_Name":"Bikash","Last_Name":"Parida"},"Mark":(29,37,88)}
+print d5
+print type(d5)
+
+#Adding value to dictionary 
+
+#Adding as a single Key : value pair 
+print ""
+d2[3]="Priyanka"
+print "Element of d2 after adition of one element : ",d2
+
+#Adding multiple value to a dictionary 
+print " "
+d4["Mark"]=47,76,50
+print "Element of d4 after ading multiple value to it :", d4 
+
+print " "
+
+#update element to a dictionary 
+
+d3["Name"]="Raju"
+print "Element after update one element :", d3
+
+#using update method ()
+
+d4.update({"Name": "Braja Kishore"})
+print d4
+

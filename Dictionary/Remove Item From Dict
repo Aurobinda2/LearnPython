@@ -1,0 +1,49 @@
+d1={}
+print d1
+print type(d1)
+print ""
+d2={1:"Aurobinda",2:"Rajesh"}
+print d2
+print type(d2)
+print ""
+d3={"Name":"Priyambada Dash" , 2:28 }
+print d3
+print type(d3)
+print ""
+d4={"Name":"Braja" ,"Subject":["Physics","Computer","Bio"] }
+print d4
+print type(d4)
+print ""
+d5={"Name":{"first_Name":"Bikash","Last_Name":"Parida"},"Mark":(29,37,88)}
+print d5
+print type(d5)
+
+print " **************** "
+
+# Removing element fron dictionary 
+
+#delete one single key element 
+del d3["Name"]
+print d3
+
+#delete a nestead element 
+
+del d4["Subject"][2]
+print d4
+
+#using pop method 
+d2.pop(1)
+print d2
+
+#using pop_item
+d4.popitem()
+print d4
+
+#clear
+
+d2.clear()
+print d2
+
+
+
+

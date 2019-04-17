@@ -1,0 +1,33 @@
+d1={}
+print d1
+print type(d1)
+print ""
+d2={1:"Aurobinda",2:"Rajesh"}
+print d2
+print type(d2)
+print ""
+d3={"Name":"Priyambada Dash" , 2:28 }
+print d3
+print type(d3)
+print ""
+d4={"Name":"Braja" ,"Subject":["Physics","Computer","Bio"] }
+print d4
+print type(d4)
+print ""
+d5={"Name":{"first_Name":"Bikash","Last_Name":"Parida"},"Mark":(29,37,88)}
+print d5
+print type(d5)
+
+print " "
+#Accessing Element from Dict.
+#By Using key 
+
+print d3["Name"]
+print d2[1]
+
+#By using get method 
+
+print d3.get("Name")
+print d2.get(1)
+
+Print " **************** "

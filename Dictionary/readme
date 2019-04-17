@@ -1,0 +1,9 @@
+Dictionary in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key : value pair.
+
+In Python Dictionary, update() method updates the dictionary with the elements from the another dictionary object or from an iterable of key/value pairs.
+
+Syntax: dict.update([other])
+
+Parameters: This method takes either a dictionary or an iterable object of key/value pairs (generally tuples) as parameters.
+
+Returns: It doesn’t return any value but updates the Dictionary with elements from a dictionary object or an iterable object of key/value pairs.

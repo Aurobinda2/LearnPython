@@ -1,0 +1,35 @@
+#OrderedDict in Python
+#An OrderedDict is a dictionary subclass that remembers the order that keys were first inserted. The only difference between dict() and OrderedDict() is that:
+
+#OrderedDict preserves the order in which the keys are inserted. A regular dict doesn’t track the insertion order, and iterating it gives the values in an arbitrary #order. By contrast, the order the items are inserted is remembered by OrderedDict.
+
+
+from collections import OrderedDict
+d1={}
+d2=OrderedDict()
+
+d1['A']=1
+d1['B']=2
+d1['C']=3
+d1['D']=4
+
+print d1
+
+d2['A']=1
+d2['B']=2
+d2['C']=3
+d2['D']=4
+
+print d2
+
+d1.update({"E":7})
+print d1
+
+d2.update({"E":7})
+print d2
+
+d1.pop("B")
+print d1
+
+d2.pop("B")
+print d2

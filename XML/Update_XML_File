@@ -1,0 +1,20 @@
+#Update  xml file
+
+import xml.etree.ElementTree as ET
+import re
+
+tree=ET.parse('data.xml')
+root=tree.getroot()
+
+ele=root.find("./genre/decade/movie/[description='WhAtEvER I Wan!!!?!']")
+ele.attrib['description']='Whatever I want!!!!!'
+tree.write('data.xml')
+
+#Update using regx
+
+for ele in root.findall("./genre/decade/movie/format[@multiple='No']"):
+    str1=ele.text
+    match=re.search(",",str1)
+    if match:
+        ele.attrib['multiple']='Yes'
+tree.write('data.xml')

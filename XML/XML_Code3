@@ -1,0 +1,30 @@
+import xml.etree.ElementTree as ET
+
+tree=ET.parse('data.xml')
+root=tree.getroot()
+
+for ele in root.findall("./genre/decade/movie[@favorite='True']"):
+    print(ele.attrib['title'])
+#Output
+#Indiana Jones: The raiders of the lost Ark
+#THE KARATE KID
+#Batman Returns
+#Ferris Bueller's Day Off
+
+for ele in root.findall("./genre/decade/movie/[rating='PG13']"):
+    print(ele.attrib)
+#{'favorite': 'True', 'title': 'Batman Returns'}
+#{'favorite': 'True', 'title': "Ferris Bueller's Day Off"}
+
+for ele in root.findall("./genre/decade/movie[@favorite='True']..."):#use '...' inside of XPath to return the parent element of the current element
+    print(ele.attrib)
+#Current element "Movie" Parent element of Current element =decade
+#{'years': '1980s'}
+#{'years': '1990s'}
+#{'years': '1980s'}
+
+for ele in root.findall("./genre/decade/movie[@favorite='True']...."):
+    print(ele.attrib)
+    
+#{'category': 'Action'}
+#{'category': 'Thriller'}

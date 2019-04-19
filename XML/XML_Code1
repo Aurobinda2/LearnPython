@@ -1,0 +1,40 @@
+#step -1 import ELementTree from xml.etree
+import xml.etree.ElementTree as ET
+#step-2 Assign the xml data file to a tree object // here tree is the object
+tree=ET.parse('data.xml')
+print(tree)#<xml.etree.ElementTree.ElementTree object at 0x000001EC74A7C5F8>
+#step 3- Get the root by using which we can do all operation
+root=tree.getroot()
+print(root)#<Element 'collection' at 0x000001EC72AB13B8> Here 'collection' is the root element /see 'data.xml' file collection is the first tag of the tree
+print(root.tag)#collection which is the root tag of xml file --> "data.xml" --<collection><genre category="Action">
+print(type(root.tag))#Gives the tag name of an element  ex: <format multiple="No">DVD</format> Here format is a tag name
+print(root.attrib) #Gives the attribute of an element
+print(type(root.attrib))
+
+for ele in root:
+#Above line mean for every child("<genre>", child of <collection>(root of tree)
+# print its tag name and attribute
+    print(ele.tag,ele.attrib)
+#genre {'category': 'Action'}
+#genre {'category': 'Thriller'}
+
+# to find all Child element as well as sub child
+
+for ele in root.iter():
+    print(ele.tag)
+#gives all Child and Sub-Child element of root(<collection>) including root
+#collection
+#genre
+#decade
+#movie
+#format
+#year
+#rating
+#description
+#movie
+#format
+#year
+#rating
+#descri ..........
+
+

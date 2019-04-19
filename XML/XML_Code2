@@ -1,0 +1,18 @@
+import xml.etree.ElementTree as ET
+
+tree=ET.parse('sample_xml.xml')
+root=tree.getroot()
+
+#assign a root to a string
+string1=ET.tostring(root,encoding='utf8').decode("utf8")
+print(string1)#Print the total xml file as a string
+
+print(string1[:30]) #<?xml version='1.0' encoding='
+
+for ele in root.iter('name'):# search the name tag and print it's associate text data
+    print(ele.text)
+# Belgian Waffles
+#Strawberry Belgian Waffles ....etc
+
+for ele in root.iter('price'):
+    print(ele.text)

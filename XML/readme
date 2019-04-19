@@ -1,1 +1,33 @@
-This Tutorial is for xml and How to extract data operate on xml data using python library .
+What is XML?
+XML stands for extensible Markup Language
+XML is a markup language much like HTML
+XML was designed to store and transport data
+XML was designed to be self-descriptive
+It is mainly used in webpages, where the data has a specific structure and is understood dynamically by the XML framework
+
+The Difference Between XML and HTML 
+•	XML was designed to carry data - with focus on what data is
+•	HTML was designed to display data - with focus on how data looks
+•	XML tags are not predefined like HTML tags are
+XML is Extensible
+ Most XML applications will work as expected even if new data is added (or removed).
+Imagine an application designed to display the original version of note.xml (<to> <from> <heading> <body>).
+Then imagine a newer version of note.xml with added <date> and <hour> elements, and a removed <heading>.
+The way XML is constructed, older version of the application can still work:
+XML Simplifies Things
+•	It simplifies data sharing
+•	It simplifies data transport
+•	It simplifies platform changes
+•	It simplifies data availability
+Many computer systems contain data in incompatible formats. Exchanging data between incompatible systems (or upgraded systems) is a time-consuming task for web developers. Large amounts of data must be converted, and incompatible data is often lost.
+XML stores data in plain text format. This provides a software- and hardware-independent way of storing, transporting, and sharing data.
+XML also makes it easier to expand or upgrade to new operating systems, new applications, or new browsers, without losing data.
+With XML, data can be available to all kinds of "reading machines" like people, computers, voice machines, news feeds, etc.
+ Xml---->over Internet---->xml (at receiver) -->convert to object, Extract data, modify data using programming language--->write the modified version to xml---> send it to original sender (over internet)
+
+Python and XML (to operate on XML) :
+
+Library: 
+Import xml. etree.ElementTree as ET 
+import xml.dom.minidom
+from xml.dom.minidom import Node

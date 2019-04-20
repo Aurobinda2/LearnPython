@@ -1,0 +1,30 @@
+import xml.dom.minidom
+from xml.dom.minidom import parse
+
+tree=parse('data.xml')
+root=tree.documentElement
+genre=root.getElementsByTagName('genre')
+for gen in genre:
+    if gen.hasAttribute('category'):
+        print("+"*4+gen.getAttribute('category')+"+"*4)
+        print("**********************************************")
+    decade=gen.getElementsByTagName('decade')
+    for dec in decade:
+        if dec.hasAttribute('years'):
+            print('  '+dec.getAttribute('years'))
+            print('  '"=========")
+        movie=dec.getElementsByTagName('movie')
+        for mov in movie:
+            if mov.hasAttribute('title'):
+                print('   '+mov.getAttribute('title'))
+            format=mov.getElementsByTagName('format')[0]
+            print('    '+'Format:'+format.childNodes[0].data)
+            year = mov.getElementsByTagName('year')[0]
+            print('    '+'Year:' + year.childNodes[0].data)
+            rating = mov.getElementsByTagName('rating')[0]
+            print('    '+'Rating:' + rating.childNodes[0].data)
+            desc = mov.getElementsByTagName('description')[0]
+            print('    '+'Desc:' + desc.childNodes[0].data)
+
+
+

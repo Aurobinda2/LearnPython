@@ -1,0 +1,33 @@
+<collection shelf="New Arrivals">
+<movie title="Enemy Behind">
+   <format>DVD</format>
+   <type>War, Thriller</type>
+   <year>2003</year>
+   <rating>PG</rating>
+   <stars>10</stars>
+   <description>Talk about a US-Japan war</description>
+</movie>
+<movie title="Transformers">
+   <format>DVD</format>
+   <type>Anime, Science Fiction</type>
+   <year>1989</year>
+   <rating>R</rating>
+   <stars>8</stars>
+   <description>A schientific fiction</description>
+</movie>
+   <movie title="Trigun">
+      <format>DVD</format>
+      <type>Anime, Action</type>
+      <episodes>4</episodes>
+      <rating>PG</rating>
+      <stars>10</stars>
+      <description>Vash the Stampede!</description>
+</movie>
+<movie title="Ishtar">
+   <format>VHS</format>
+   <type>Comedy</type>
+   <rating>PG</rating>
+   <stars>2</stars>
+   <description>Viewable boredom</description>
+</movie>
+</collection>

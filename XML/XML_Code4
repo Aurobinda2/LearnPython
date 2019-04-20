@@ -1,0 +1,26 @@
+import xml.etree.ElementTree as ET
+
+tree=ET.parse('data.xml')
+root=tree.getroot()
+ele_action=root.find("./genre/decade/movie/[year='2000']")
+print(ele_action.attrib)
+
+action=root.find("./genre/[@category='Action']")
+new_dec=ET.SubElement(action,'decade')
+new_dec.attrib['years']='2000s'
+xmen=root.find("./genre/decade/movie/[@title='X-Men']")
+action_2000s=root.find("./genre[@category='Action']/decade[@years='2000s']")
+action_2000s.append(xmen)
+action_90s=root.find("./genre[@category='Action']/decade[@years='1990s']")
+action_90s.remove(xmen)
+
+thriller=root.find("./genre[@category='Thriller']")
+new_decade=ET.SubElement(thriller,'decade')
+new_decade.attrib['years']='2000s'
+American_Psycho=root.find("./genre/decade/movie[@title='American Psycho']")
+thriller_200s=root.find("./genre[@category='Thriller']/decade[@years='2000s']")
+thriller_200s.append(American_Psycho)
+
+#string1=ET.tostring(root,encoding='utf8').decode('utf8')
+
+tree.write('data.xml')

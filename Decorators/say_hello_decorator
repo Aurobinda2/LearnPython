@@ -1,0 +1,11 @@
+def to_upper(func):
+    def inner():
+        x=func()
+        result=x.upper()
+        return result
+    return inner
+
+@to_upper
+def say_hello():
+    return "Aurobinda"
+print(say_hello())

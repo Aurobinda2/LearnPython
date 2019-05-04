@@ -1,6 +1,6 @@
 import cx_Oracle as ora
 try:
-    con=ora.connect('system/auro@localhost/XE')
+    con=ora.connect('system/password@localhost/XE')
     cursor=con.cursor()
 except ora.DatabaseError as msg:
     print('Database connection fail with error as :{0}'.format(msg))

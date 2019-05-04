@@ -2,7 +2,7 @@ import cx_Oracle
 from faker import Faker
 import random
 try:
-   con=cx_Oracle.connect('system/auro@localhost/XE')
+   con=cx_Oracle.connect('system/password@localhost/XE')
    cursor=con.cursor()
 except cx_Oracle.DatabaseError as msg:
    print("Database error with message :",msg)

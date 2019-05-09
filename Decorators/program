@@ -1,0 +1,18 @@
+def bfunc(func):
+    def innerfunc():
+        print("*"*5)
+        func()
+        print("%"*5)
+    return innerfunc
+
+def afunc(func):
+    def innerfunc():
+        print("*"*5)
+        func()
+        print("%"*5)
+    return innerfunc
+@bfunc
+@afunc
+def base_func():
+    print("Hello Aurobinda")
+base_func()

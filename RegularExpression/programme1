@@ -1,0 +1,35 @@
+import re
+def Match():
+      input1=input("Enter Pattern:")
+      matcher=re.match(input1,"aurobindr.nayak3@gmail.com")
+      if matcher !=None :
+          print("Match found .. at possition{}".format(matcher.start()))
+      else :
+          print("pattern not match .. give a different try")
+
+def Fullmatch():
+       pattern,matcher =list(input("Enter Pattern,string:").split(' '))
+       result= re.fullmatch(pattern,matcher)
+       if result!=None:
+           print("Pattern Match")
+       else:
+           print("Pattern not found")
+
+while (1):
+    option=input("1)match,2)Fullmatch,3)Exit : ")
+    if(option=='1'):
+        Match()
+    elif(option=='2'):
+        Fullmatch()
+    elif(option=='3'):
+        break
+    else:
+        print("Enter a valid option between 1-3")
+
+
+
+
+
+
+
+

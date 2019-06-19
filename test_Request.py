@@ -8,7 +8,6 @@ data_dict=data.json()
 for item in data_dict['data']:
     print('id:'item['id'])
     print('Name:' item['first_name']+' '+item['last_name'])
-    
     print(' ')
     
 

@@ -1,6 +1,6 @@
 import functools
 
-l1 = [1, 2, 3, 4, 5, 6]
+l1 = [1, 2, 3, 4, 5, 6,7]
 
 list1 = [i for i in l1]
 

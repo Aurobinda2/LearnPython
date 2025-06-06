@@ -9,7 +9,7 @@
 l1=["Name","Age","Place"]
 l2=["Aurobinda",28,"Cuttack"]
 
-d1={k:v for(k,v) in zip(l1,l2)}
+d1={k:v for() in zip(l1,l2)}
 print d1
 
 d1={k:v for(k,v) in zip(l1,l2) }
